@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pet ID Registration Form</title>
 </head>
 <body>
+    <form action="#">
+        <fieldset>
+            <legend>General Info</legend>
+           Name: <input type="text" name="petName"><br>
+           DOB: <input type="date" name="petBirthday"><br>
+           Weight: <input type="number" name="petWeight" min="0"><br>
+           Owner Email: <input type="email" name="petOwnerEmail"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Detail Info</legend>
+            Fur Color: 
+            <input type="radio" name="petFurColor" value="white"> White
+            <input type="radio" name="petFurColor" value="black"> Black
+            <input type="radio" name="petFurColor"  value="yellow"> Yellow
+            <input type="radio" name="petFurColor"  value="red"> Red
+
+            <br>
+            Hobbies:
+            <input type="checkbox" name="petHobbies" value="milk"> Milk
+            <input type="checkbox" name="petHobbies" value="playingBall> Playing Ball
+            <input type="checkbox" name="petHobbies" value="watchMovies"> Watch Movies
+            <br>
+            Species:
+            <select name="petSpecies">
+                <option value="Abyssinian Cat">Abyssinian Cat</option>
+                <option value="American Bobtail Cat Breed">American Bobtail Cat Breed</option>
+                <option value="American Curl Cat Breed">American Curl Cat Breed</option>
+                <option value="American Shorthair Cat">American Shorthair Cat</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Info</legend>
+            Pet Photo: <input type="file" name="petPhoto" ><br>
+            Note: <textarea name="petNote" cols="30" rows="10"></textarea>
+        </fieldset>
+    </form>
     
+
+
+
 </body>
 </html>
