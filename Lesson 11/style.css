@@ -1,0 +1,22 @@
+h1{
+    margin: auto;
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+p{
+    background-color: bisque;
+    color: black;
+    font-weight: bold;
+    width: 40%;
+    /* display: inline; */
+    float: left;
+}
+
+img{
+    
+    height: 300px;
+    display: block;
+    margin: auto;
+}
