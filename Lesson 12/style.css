@@ -7,7 +7,7 @@ html, body{
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     font-weight: bold;
 }
 
@@ -42,6 +42,16 @@ header button {
     margin-right: 100px;
     background-color: #006845;
     color: white;
+    transition: 3s;
+}
+
+header button:hover {/* chỉ áp dụng phần Css bên trong khi button được hover*/
+border: 2px solid #006845;
+background-color: white;
+color: #006845;
+cursor: pointer;
+opacity: 0.3;/*0.0 -> 1.0*/
+/*transition: 3s;*/
 }
 
 .intro{
@@ -53,6 +63,7 @@ header button {
     height: 100%;
     width: 40%;
     float: left;
+    opacity: 0.7;/*0.0 -> 1.0*/
 }
 
 .intro div{
@@ -71,4 +82,42 @@ header button {
 
 .intro h1{
     color: #006845;
+}
+
+.information{
+    width: 100%;
+    height: 50%;
+    padding-left:15% ;
+}
+
+.bg-green{
+    background-color: #006845;
+    color: white;
+
+}
+
+
+.information img{
+    height: 100%;
+    float: left;
+    position: relative;
+    top: 50px;
+}
+
+.information p{
+    font-size: 1.63rem;
+    float:left;
+    width: 35%;
+    margin-top: 200px;
+    line-height: 1.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#img-position-custom{
+    top:-50px;
+}
+
+img+p{
+    margin-left: 80px;
 }

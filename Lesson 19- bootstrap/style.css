@@ -1,0 +1,10 @@
+html, body {
+background-color: ghostwhite;
+    
+}
+
+.carousel-inner{
+    max-width: 50%;
+    max-height: auto;;
+    
+}
